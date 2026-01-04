@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Corporate Fintech Color System */
+    --background: 210 20% 98%; /* Very light gray, almost white */
+    --foreground: 222 47% 20%; /* Dark navy for text */
+    
+    --primary: 222 47% 25%; /* Navy blue - institutional */
+    --primary-foreground: 0 0% 100%; /* White */
+    
+    --secondary: 210 20% 96%; /* Light gray */
+    --secondary-foreground: 222 47% 20%;
+    
+    --accent: 160 84% 39%; /* Emerald green - CTAs */
+    --accent-foreground: 0 0% 100%;
+    
+    --muted: 210 20% 94%;
+    --muted-foreground: 222 20% 50%;
+    
+    --card: 0 0% 100%; /* White cards */
+    --card-foreground: 222 47% 20%;
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 222 47% 25%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
